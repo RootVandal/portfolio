@@ -110,6 +110,13 @@ em { font-style: normal; color: var(--accent); }
 .svc h3 { margin: 18px 0 0; font-family: var(--disp); font-weight: 600; font-size: clamp(21px, 2.2vw, 28px); letter-spacing: -.01em; }
 .svc p { margin: 12px 0 0; color: var(--fg-2); font-size: 14.5px; flex: 1; }
 .svc .pr { margin-top: 20px; font-family: var(--disp); font-weight: 600; font-size: 18px; color: var(--fg); }
+/* последняя карточка-акцент «на заказ» на всю ширину */
+.svc-list .svc:last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 0; border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--card)); display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: 40px; }
+.svc-list .svc:last-child:nth-child(odd):hover { transform: none; }
+.svc-list .svc:last-child:nth-child(odd) .n { grid-column: 1; }
+.svc-list .svc:last-child:nth-child(odd) h3 { grid-column: 1; margin: 6px 0 0; }
+.svc-list .svc:last-child:nth-child(odd) p { grid-column: 1; margin: 8px 0 0; max-width: 640px; flex: none; }
+.svc-list .svc:last-child:nth-child(odd) .pr { grid-column: 2; grid-row: 1 / 4; margin: 0; align-self: center; font-size: clamp(22px, 3vw, 30px); color: var(--accent); white-space: nowrap; }
 
 /* Process */
 .process { padding-bottom: clamp(40px, 6vw, 80px); }
@@ -211,4 +218,6 @@ em { font-style: normal; color: var(--accent); }
   .steps .step, .steps .step:nth-child(even) { border-right: 0; padding-left: 0; padding-right: 0; padding-top: 28px; }
   .steps .step:first-child { padding-top: 26px; }
   .contact-grid { grid-template-columns: 1fr; }
+  .svc-list .svc:last-child:nth-child(odd) { grid-template-columns: 1fr; }
+  .svc-list .svc:last-child:nth-child(odd) .pr { grid-column: 1; grid-row: auto; margin-top: 16px; }
 }
