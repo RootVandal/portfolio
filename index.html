@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Сайты на заказ · портфолио</title>
+  <meta name="description" content="Делаю сайты на заказ: лендинги, интернет-магазины и веб-приложения. Примеры работ с живыми демо.">
+  <meta name="theme-color" content="#0e0e11">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0e11'/%3E%3Cpath d='M9 21l5-10 5 10' stroke='%23ff6a2b' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <a class="logo" href="#top"><span class="dot"></span><b data-me="name">СТУДИЯ</b></a>
+  <nav class="nav" id="nav">
+    <a href="#works">Работы</a>
+    <a href="#services">Услуги</a>
+    <a href="#process">Как работаю</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <a class="btn btn-sm hdr-cta" href="#contact">Обсудить проект</a>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow mono"><span class="pulse"></span> Свободен для заказов · <span data-me="city">Алматы</span></p>
+      <h1 class="hero-title" id="heroTitle">Делаю сайты,<br>которые <em>продают.</em></h1>
+      <p class="hero-lead" data-me="lead"></p>
+      <div class="hero-actions">
+        <a class="btn" href="#works">Смотреть работы</a>
+        <a class="btn btn-ghost" href="#contact">Обсудить проект</a>
+      </div>
+      <div class="hero-marks mono">
+        <span>Лендинги</span><span>Интернет-магазины</span><span>Веб-приложения</span><span>Адаптив</span><span>Чистый код</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <div class="wrap sec-head">
+      <span class="sec-no mono">— Работы</span>
+      <h2 class="sec-title">Концепты, которые<br>можно <em>открыть прямо сейчас.</em></h2>
+      <p class="sec-sub">Нажмите «Открыть сайт» — каждый проект работает вживую, со всеми экранами и анимацией.</p>
+    </div>
+    <div class="wrap work-list" id="workList"></div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap sec-head"><span class="sec-no mono">— Услуги</span><h2 class="sec-title">Что я <em>делаю.</em></h2></div>
+    <div class="wrap svc-list" id="svcList"></div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="wrap sec-head"><span class="sec-no mono">— Как работаю</span><h2 class="sec-title">Четыре шага<br>от идеи <em>до запуска.</em></h2></div>
+    <ol class="wrap steps" id="steps"></ol>
+  </section>
+
+  <section class="faq wrap">
+    <div class="sec-head"><span class="sec-no mono">— Вопросы</span><h2 class="sec-title">Коротко<br><em>о работе.</em></h2></div>
+    <div class="faq-list" id="faq"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-in">
+      <span class="sec-no mono">— Контакты</span>
+      <h2 class="contact-title">Расскажите<br>про <em>проект.</em></h2>
+      <p class="contact-lead">Напишите в мессенджер или оставьте заявку — отвечу и прикину сроки и бюджет.</p>
+      <div class="contact-grid">
+        <a class="c-card" data-me-href="wa" target="_blank" rel="noopener"><span class="mono">WhatsApp</span><b>Написать →</b></a>
+        <a class="c-card" data-me-href="tg" target="_blank" rel="noopener"><span class="mono">Telegram</span><b>Написать →</b></a>
+        <a class="c-card" data-me-href="tel"><span class="mono">Телефон</span><b data-me="phone"></b></a>
+        <a class="c-card" data-me-href="mail"><span class="mono">E-mail</span><b data-me="email"></b></a>
+      </div>
+      <form class="form" id="form" novalidate>
+        <div class="row">
+          <label class="field"><span>Имя</span><input name="name" autocomplete="name" required placeholder="Как вас зовут"></label>
+          <label class="field"><span>Телефон или @ник</span><input name="contact" required placeholder="+7 7__ ___ __ __"></label>
+        </div>
+        <label class="field"><span>Что нужно сделать</span><textarea name="note" rows="3" placeholder="Например: лендинг для кофейни с меню и формой брони"></textarea></label>
+        <button class="btn btn-block" type="submit">Отправить заявку</button>
+        <p class="form-note">Демо-форма: данные никуда не отправляются. Кнопка соберёт сообщение для WhatsApp.</p>
+        <div class="form-ok" id="formOk" hidden>
+          <b>Готово.</b><p>В рабочей версии заявка придёт мне. Пока продублируйте в WhatsApp:</p>
+          <a class="btn" id="formWa" target="_blank" rel="noopener">Открыть WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-top">
+    <div><span class="dot"></span><b data-me="name"></b><p data-me="role"></p></div>
+    <div class="ftr-links">
+      <a data-me-href="wa" target="_blank" rel="noopener">WhatsApp</a>
+      <a data-me-href="tg" target="_blank" rel="noopener">Telegram</a>
+      <a data-me-href="ig" target="_blank" rel="noopener">Instagram</a>
+      <a data-me-href="gh" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <div class="ftr-word" aria-hidden="true" data-me="name">СТУДИЯ</div>
+  <div class="wrap ftr-bottom mono"><span>© <span id="year"></span> <span data-me="name"></span> · <span data-me="city"></span></span><span>Концепт · демо-работы вживую</span></div>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
