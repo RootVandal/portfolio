@@ -11,10 +11,10 @@ window.ME = {
   role: "Делаю сайты на заказ",
   city: "Алматы",
   lead: "Лендинги, интернет-магазины и веб-приложения под ключ. От идеи до готового сайта на вашем домене — с адаптивом, анимацией и чистым кодом.",
-  phone: "+7 700 000 00 00",
-  whatsapp: "77000000000",
+  phone: "+7 705 985 89 10",
+  whatsapp: "77059858910",
   telegram: "webstudio",
-  email: "hello@webstudio.kz",
+  email: "999azazun@gmail.com",
   instagram: "web.studio",
   github: "RootVandal",
 };
