@@ -50,7 +50,7 @@
 
   function steps() {
     $("#steps").innerHTML = window.STEPS.map(([t, d], i) =>
-      `<li class="reveal"><span class="k">0${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join("");
+      `<div class="step reveal"><span class="k">0${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join("");
   }
 
   function faq() {
