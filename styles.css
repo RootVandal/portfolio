@@ -142,7 +142,7 @@ em { font-style: normal; color: var(--accent); }
 .contact-in { background: var(--bg-2); border: 1px solid var(--line); border-radius: 24px; padding: clamp(28px, 5vw, 72px); }
 .contact-title { margin: 14px 0 0; font-family: var(--disp); font-weight: 600; font-size: clamp(36px, 5.5vw, 76px); line-height: .98; letter-spacing: -.025em; }
 .contact-lead { margin: 20px 0 0; color: var(--fg-2); max-width: 480px; font-size: 17px; }
-.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 36px 0; }
+.contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 36px 0; }
 .c-card { border: 1px solid var(--line-2); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px; transition: border-color .25s, transform .25s var(--ease), background .25s; }
 .c-card:hover { border-color: var(--accent); transform: translateY(-3px); background: var(--card); }
 .c-card .mono { color: var(--mute); }

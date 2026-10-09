@@ -13,7 +13,6 @@ window.ME = {
   lead: "Лендинги, интернет-магазины и веб-приложения под ключ. От идеи до готового сайта на вашем домене — с адаптивом, анимацией и чистым кодом.",
   phone: "+7 705 985 89 10",
   whatsapp: "77059858910",
-  telegram: "webstudio",
   email: "999azazun@gmail.com",
   instagram: "web.studio",
   github: "RootVandal",
