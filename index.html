@@ -3,110 +3,212 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Сайты на заказ · портфолио</title>
-  <meta name="description" content="Делаю сайты на заказ: лендинги, интернет-магазины и веб-приложения. Примеры работ с живыми демо.">
-  <meta name="theme-color" content="#0e0e11">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0e11'/%3E%3Cpath d='M9 21l5-10 5 10' stroke='%23ff6a2b' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <title>Сайты без шаблонов — веб-студия, Алматы</title>
+  <meta name="description" content="Дизайн и разработка сайтов в Алматы: лендинги, интернет-магазины, веб-приложения. Каждый проект с нуля, от 30 000 ₸. Работы открываются вживую.">
+  <meta name="theme-color" content="#ebebe6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Сайты без шаблонов — веб-студия, Алматы">
+  <meta property="og:description" content="Каждый проект с нуля. Посмотрите работы вживую и рассчитайте цену своего сайта за минуту.">
+  <meta property="og:image" content="https://rootvandal.github.io/portfolio/assets/og.jpg">
+  <meta property="og:url" content="https://rootvandal.github.io/portfolio/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111110'/%3E%3Cpath d='M16 11c-4-2.3-9 0-9 6 0 5.4 3.8 10 6.3 10 1.1 0 1.6-.6 2.7-.6s1.6.6 2.7.6C21.2 27 25 22.4 25 17c0-6-5-8.3-9-6z' fill='%23e5332a'/%3E%3Cpath d='M16 11c0-2.4 1.2-4.2 3.4-4.8' stroke='%23ebebe6' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
-<body>
+<body data-palette="base">
 
+<a class="skip" href="#works">К работам</a>
+
+<!-- ================================ HEADER ================================ -->
 <header class="hdr" id="hdr">
-  <a class="logo" href="#top"><span class="dot"></span><b data-me="name">СТУДИЯ</b></a>
-  <nav class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="На главную">
+    <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path class="apple-body" d="M12 7.4c-3.3-1.9-7.6 0-7.6 5 0 4.6 3.2 8.6 5.3 8.6.9 0 1.4-.5 2.3-.5s1.4.5 2.3.5c2.1 0 5.3-4 5.3-8.6 0-5-4.3-6.9-7.6-5z"/><path class="apple-stem" d="M12 7.4c0-2 1-3.6 2.9-4.1"/><path class="apple-leaf" d="M13.4 5.2c1.4-1 3.2-.9 4.3.1-1.2 1.1-3 1.2-4.3-.1z"/></svg>
+    <span class="logo-name" data-me="name">АЛМА</span>
+    <span class="logo-suf mono" data-me="suffix">веб-студия</span>
+  </a>
+  <div class="hdr-status mono" aria-live="off">
+    <span class="live" aria-hidden="true"></span>
+    <span data-me="status">Свободен для новых проектов</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span id="clock">Алматы</span>
+  </div>
+  <nav class="nav" id="nav" aria-label="Разделы">
     <a href="#works">Работы</a>
-    <a href="#services">Услуги</a>
-    <a href="#process">Как работаю</a>
+    <a href="#build">Цена</a>
+    <a href="#process">Процесс</a>
     <a href="#contact">Контакты</a>
   </nav>
   <a class="btn btn-sm hdr-cta" href="#contact">Обсудить проект</a>
-  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+  <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
 </header>
 
-<main id="top">
+<main>
 
-  <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow mono"><span class="pulse"></span> Свободен для заказов · <span data-me="city">Алматы</span></p>
-      <h1 class="hero-title" id="heroTitle">Делаю сайты,<br>которые <em>продают.</em></h1>
-      <p class="hero-lead" data-me="lead"></p>
-      <div class="hero-actions">
+<!-- ================================= HERO ================================= -->
+<section class="hero" id="top" data-palette="base">
+  <div class="wrap hero-top">
+    <p class="kicker mono">Дизайн и разработка сайтов — <span data-me="city">Алматы</span></p>
+    <h1 class="hero-h">
+      <span class="ln"><span>Сайты</span></span>
+      <span class="ln"><span>без <span class="strike">шаблонов<svg class="strike-line" viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true"><path d="M6 26 C 70 12, 150 34, 294 14" pathLength="1"/></svg></span>.</span></span>
+    </h1>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="hero-note mono" aria-hidden="true"><span>↑</span> каждый проект — с нуля, под ваш бизнес</p>
+      <p class="hero-lead">Лендинги, интернет-магазины и веб-приложения, которые выглядят как ваш бренд, а не как тема с маркетплейса. Это не макеты: все работы на сайте живые — их можно открыть и полистать.</p>
+      <div class="hero-cta">
         <a class="btn" href="#works">Смотреть работы</a>
-        <a class="btn btn-ghost" href="#contact">Обсудить проект</a>
-      </div>
-      <div class="hero-marks mono">
-        <span>Лендинги</span><span>Интернет-магазины</span><span>Веб-приложения</span><span>Адаптив</span><span>Чистый код</span>
+        <a class="btn btn-line" href="#build">Рассчитать цену</a>
       </div>
     </div>
-  </section>
-
-  <section class="works" id="works">
-    <div class="wrap sec-head">
-      <span class="sec-no mono">— Работы</span>
-      <h2 class="sec-title">Концепты, которые<br>можно <em>открыть прямо сейчас.</em></h2>
-      <p class="sec-sub">Нажмите «Открыть сайт» — каждый проект работает вживую, со всеми экранами и анимацией.</p>
+    <div class="hero-stack" id="stack" aria-label="Три работы: наведите, чтобы пролистать, нажмите, чтобы перейти">
+      <div class="stack-rot" id="stackRot"></div>
     </div>
-    <div class="wrap work-list" id="workList"></div>
-  </section>
+  </div>
+  <ul class="wrap facts mono" aria-label="Коротко">
+    <li><b>3</b> проекта онлайн — откройте любой</li>
+    <li><b>от 30 000 ₸</b> цена зависит от задачи</li>
+    <li><b>5–10 дней</b> на лендинг</li>
+    <li><b>100%</b> код вручную, без конструкторов</li>
+  </ul>
+</section>
 
-  <section class="services" id="services">
-    <div class="wrap sec-head"><span class="sec-no mono">— Услуги</span><h2 class="sec-title">Что я <em>делаю.</em></h2></div>
-    <div class="wrap svc-list" id="svcList"></div>
-  </section>
+<!-- =============================== MANIFEST =============================== -->
+<section class="manifest" data-palette="base" aria-label="Подход">
+  <p class="wrap manifest-t" id="manifest">Шаблон делает ваш бизнес похожим на сотню других. Я собираю сайт под вас: свой цвет, свой шрифт, своя подача — чтобы клиент запомнил вас с первого экрана.</p>
+</section>
 
-  <section class="process" id="process">
-    <div class="wrap sec-head"><span class="sec-no mono">— Как работаю</span><h2 class="sec-title">Четыре шага<br>от идеи <em>до запуска.</em></h2></div>
-    <div class="wrap steps" id="steps"></div>
-  </section>
+<!-- ================================= WORKS ================================ -->
+<section class="works-intro" id="works" data-palette="base">
+  <div class="wrap works-intro-in">
+    <span class="eyebrow mono">Работы · 03</span>
+    <h2 class="h2">Три проекта —<br>три разных мира.</h2>
+    <p class="works-lead">Листайте дальше: сайт перекрасится под каждый проект. Всё работает вживую — откройте в новой вкладке или попробуйте прямо здесь.</p>
+  </div>
+</section>
+<div id="stages"></div>
 
-  <section class="faq wrap">
-    <div class="sec-head"><span class="sec-no mono">— Вопросы</span><h2 class="sec-title">Коротко<br><em>о работе.</em></h2></div>
+<!-- =============================== BUILDER ================================ -->
+<section class="build" id="build" data-palette="base">
+  <div class="wrap build-head">
+    <span class="eyebrow mono">Цена · за минуту</span>
+    <h2 class="h2">Следующий проект — ваш.<br><span class="soft">Соберите сайт и узнайте цену.</span></h2>
+  </div>
+  <div class="wrap build-grid">
+    <form class="build-form" id="buildForm" onsubmit="return false">
+      <fieldset>
+        <legend><b class="mono">01</b> Какой сайт нужен?</legend>
+        <div class="types" id="types" role="radiogroup" aria-label="Тип сайта"></div>
+      </fieldset>
+      <fieldset>
+        <legend><b class="mono">02</b> Сколько разделов?</legend>
+        <div class="pages">
+          <input type="range" id="pages" min="1" max="12" value="1" aria-describedby="pagesHint">
+          <output id="pagesOut" for="pages">1</output>
+        </div>
+        <p class="hint" id="pagesHint"></p>
+      </fieldset>
+      <fieldset>
+        <legend><b class="mono">03</b> Что добавить?</legend>
+        <div class="extras" id="extras"></div>
+      </fieldset>
+      <fieldset>
+        <legend><b class="mono">04</b> Сроки</legend>
+        <label class="switch" for="urgent">
+          <input type="checkbox" id="urgent">
+          <span class="track" aria-hidden="true"><span></span></span>
+          <span class="switch-t">Нужно быстрее <small>сокращу срок, +30% к цене</small></span>
+        </label>
+      </fieldset>
+    </form>
+
+    <aside class="receipt" id="receipt" aria-live="polite">
+      <div class="rc-head mono">
+        <span>Расчёт № <b id="rcNo">0000</b></span>
+        <span id="rcDate"></span>
+      </div>
+      <div class="rc-brand"><span data-me="name">АЛМА</span> · <span data-me="suffix">веб-студия</span></div>
+      <ul class="rc-lines" id="rcLines"></ul>
+      <div class="rc-total"><span>Итого</span><b id="rcTotal">—</b></div>
+      <div class="rc-days mono" id="rcDays">—</div>
+      <a class="btn btn-block btn-apple" id="rcSend" target="_blank" rel="noopener">Отправить расчёт в WhatsApp</a>
+      <p class="rc-note">Это ориентир. Точную цену назову после короткого созвона — без скрытых доплат.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ================================ PROCESS =============================== -->
+<section class="process" id="process" data-palette="base">
+  <div class="wrap">
+    <span class="eyebrow mono">Процесс</span>
+    <h2 class="h2">Как это будет.</h2>
+    <ol class="rail" id="rail"></ol>
+  </div>
+</section>
+
+<!-- ================================== FAQ ================================= -->
+<section class="faq" data-palette="base" aria-label="Вопросы">
+  <div class="wrap faq-grid">
+    <div><span class="eyebrow mono">Вопросы</span><h2 class="h2">Коротко<br>о главном.</h2></div>
     <div class="faq-list" id="faq"></div>
-  </section>
+  </div>
+</section>
 
-  <section class="contact" id="contact">
-    <div class="wrap contact-in">
-      <span class="sec-no mono">— Контакты</span>
-      <h2 class="contact-title">Расскажите<br>про <em>проект.</em></h2>
-      <p class="contact-lead">Напишите в мессенджер или оставьте заявку — отвечу и прикину сроки и бюджет.</p>
-      <div class="contact-grid">
-        <a class="c-card" data-me-href="wa" target="_blank" rel="noopener"><span class="mono">WhatsApp</span><b>Написать →</b></a>
-        <a class="c-card" data-me-href="tel"><span class="mono">Телефон</span><b data-me="phone"></b></a>
-        <a class="c-card" data-me-href="mail"><span class="mono">E-mail</span><b data-me="email"></b></a>
-      </div>
-      <form class="form" id="form" novalidate>
-        <div class="row">
-          <label class="field"><span>Имя</span><input name="name" autocomplete="name" required placeholder="Как вас зовут"></label>
-          <label class="field"><span>Телефон или @ник</span><input name="contact" required placeholder="+7 7__ ___ __ __"></label>
-        </div>
-        <label class="field"><span>Что нужно сделать</span><textarea name="note" rows="3" placeholder="Например: лендинг для кофейни с меню и формой брони"></textarea></label>
-        <button class="btn btn-block" type="submit">Отправить заявку</button>
-        <p class="form-note">Демо-форма: данные никуда не отправляются. Кнопка соберёт сообщение для WhatsApp.</p>
-        <div class="form-ok" id="formOk" hidden>
-          <b>Готово.</b><p>В рабочей версии заявка придёт мне. Пока продублируйте в WhatsApp:</p>
-          <a class="btn" id="formWa" target="_blank" rel="noopener">Открыть WhatsApp</a>
-        </div>
-      </form>
+<!-- ================================ CONTACT =============================== -->
+<section class="contact" id="contact" data-palette="night">
+  <div class="wrap">
+    <span class="eyebrow mono">Контакты</span>
+    <h2 class="contact-h">Напишите —<br>обсудим ваш сайт.</h2>
+    <a class="phone-big" data-me-href="tel"><span data-me="phone">+7 705 985 89 10</span><span class="arrow" aria-hidden="true">↗</span></a>
+    <div class="contact-row">
+      <a class="btn btn-apple" data-me-href="wa" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <button class="btn btn-line" id="copyMail" type="button"><span data-me="email">999azazun@gmail.com</span><span class="copy-t mono">копировать</span></button>
     </div>
-  </section>
+    <p class="contact-note mono"><span data-me="city">Алматы</span> и удалённо · по всему Казахстану</p>
+  </div>
+  <footer class="ftr wrap mono">
+    <span>© <span id="year"></span> <span data-me="name"></span> — <span data-me="suffix"></span></span>
+    <span>Сайт сделан вручную — без конструкторов и шаблонов</span>
+    <span class="ftr-links"><a data-me-href="gh" target="_blank" rel="noopener">GitHub</a><a href="#top">Наверх ↑</a></span>
+  </footer>
+</section>
 
 </main>
 
-<footer class="ftr">
-  <div class="wrap ftr-top">
-    <div><span class="dot"></span><b data-me="name"></b><p data-me="role"></p></div>
-    <div class="ftr-links">
-      <a data-me-href="wa" target="_blank" rel="noopener">WhatsApp</a>
-      <a data-me-href="ig" target="_blank" rel="noopener">Instagram</a>
-      <a data-me-href="gh" target="_blank" rel="noopener">GitHub</a>
+<!-- ============================ MOBILE PRICE BAR ========================== -->
+<div class="mbar" id="mbar" aria-hidden="true">
+  <div><b id="mbTotal">—</b><span class="mono" id="mbDays">—</span></div>
+  <a class="btn btn-sm btn-apple" id="mbSend" target="_blank" rel="noopener">В WhatsApp</a>
+</div>
+
+<!-- ============================== TRY OVERLAY ============================= -->
+<div class="try" id="try" role="dialog" aria-modal="true" aria-labelledby="tryTitle" aria-hidden="true">
+  <div class="try-bar">
+    <div class="try-name"><span class="mono" id="tryKind"></span><b id="tryTitle"></b></div>
+    <div class="seg" role="group" aria-label="Устройство">
+      <button type="button" data-dev="desk" class="on">Компьютер</button>
+      <button type="button" data-dev="tab">Планшет</button>
+      <button type="button" data-dev="mob">Телефон</button>
+    </div>
+    <div class="try-act">
+      <a class="try-open" id="tryOpen" target="_blank" rel="noopener">Открыть в новой вкладке ↗</a>
+      <button class="try-x" id="tryX" type="button" aria-label="Закрыть">×</button>
     </div>
   </div>
-  <div class="ftr-word" aria-hidden="true" data-me="name">СТУДИЯ</div>
-  <div class="wrap ftr-bottom mono"><span>© <span id="year"></span> <span data-me="name"></span> · <span data-me="city"></span></span><span>Концепт · демо-работы вживую</span></div>
-</footer>
+  <div class="try-stage">
+    <div class="try-frame" id="tryFrame" data-dev="desk">
+      <div class="try-load mono" id="tryLoad">Загружаю сайт…</div>
+      <iframe id="tryIf" title="Живой сайт" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="cur" id="cur" aria-hidden="true"><span id="curT"></span></div>
 
 <script src="config.js"></script>
 <script src="app.js"></script>
