@@ -1,6 +1,6 @@
 /* ==========================================================================
    Портфолио веб-разработчика — «Хамелеон».
-   Основа: светлый бетон, чёрная краска, алматинский красный (яблоко).
+   Основа: светлый бетон, чёрная краска, красный акцент.
    Пока листаешь работы, страница перекрашивается в палитру каждого проекта:
    body[data-palette] переопределяет токены, всё остальное их только читает.
    ========================================================================== */
@@ -86,14 +86,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 }
 .hdr.solid { background: color-mix(in srgb, var(--bg) 84%, transparent); backdrop-filter: blur(16px) saturate(1.2); -webkit-backdrop-filter: blur(16px) saturate(1.2); border-color: var(--line); }
 .logo { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
-.apple { width: 26px; height: 26px; flex: none; overflow: visible; }
-.apple-body { fill: var(--apple); }
-.apple-stem { fill: none; stroke: var(--fg); stroke-width: 1.6; stroke-linecap: round; transition: stroke .9s var(--ease); }
-.apple-leaf { fill: var(--fg); transition: fill .9s var(--ease); transform-origin: 13.4px 5.2px; }
-.logo:hover .apple-leaf { animation: leaf .8s var(--ease); }
-@keyframes leaf { 40% { transform: rotate(-18deg); } }
-.logo-name { font-family: var(--disp); font-weight: 700; font-size: 18px; letter-spacing: .02em; }
-.logo-suf { color: var(--fg-2); font-size: 10px; }
+.logo-name { font-family: var(--disp); font-weight: 700; font-size: 18px; letter-spacing: .01em; }
 .hdr-status { display: flex; align-items: center; gap: 9px; color: var(--fg-2); margin-left: auto; font-size: 10.5px; }
 .live { width: 7px; height: 7px; border-radius: 50%; background: #22c06a; box-shadow: 0 0 0 0 rgba(34,192,106,.55); animation: live 2.2s infinite; }
 @keyframes live { 70% { box-shadow: 0 0 0 7px rgba(34,192,106,0); } 100% { box-shadow: 0 0 0 0 rgba(34,192,106,0); } }
@@ -409,7 +402,6 @@ html:not(.js) .manifest-t .w { opacity: 1; }
   .mbar .mono { color: rgba(235,235,230,.6); font-size: 10px; }
 }
 @media (max-width: 640px) {
-  .logo-suf { display: none; }
   .hero-h { font-size: clamp(42px, 13.4vw, 96px); }
   .hero-cta .btn { flex: 1; }
   .stage-feat { grid-template-columns: 1fr; }
